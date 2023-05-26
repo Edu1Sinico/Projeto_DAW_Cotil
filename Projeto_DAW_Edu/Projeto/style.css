@@ -4,8 +4,14 @@ body {
 }
 
 .menuBanner {
-    /* background-image: ; */
-    margin-bottom: 250px;
+    background-image: url(img/bannerImg.jpg);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: 100%;
+    width: 100%;
+    height: 865px;
 }
 
 /* ------------------------------------------ */
@@ -26,17 +32,17 @@ body {
 }
 
 .menuBanner .cab1 .menu .logoImg {
-    margin-left: 400px;
+    margin-left: 232px;
 }
 
 .menuBanner .cab1 .menu .menuLink {
     display: flex;
     justify-content: space-evenly;
-    margin-right: 400px;
+    margin-right: 250px;
     width: 380px;
 }
 
-.menuBanner .cab1 .menu .menuLink a{
+.menuBanner .cab1 .menu .menuLink a {
     width: 110px;
     height: 55px;
     text-decoration: none;
@@ -48,10 +54,11 @@ body {
     transition: transform 200ms linear, color 200ms;
 }
 
-.menuBanner .cab1 .menu .menuLink a:hover{
+.menuBanner .cab1 .menu .menuLink a:hover {
     transform: scale(1.1);
     color: rgb(88, 194, 255);
 }
+
 .menuBanner .cab1 .menu .logoImg img {
     width: 65px;
     height: 65px;
@@ -60,12 +67,12 @@ body {
 /* ------------------------------------------ */
 /* ----------------- Banner ----------------- */
 
-.menuBanner .textBanner .text{
-    margin-top: 200px;
-    margin-left: 400px;
+.menuBanner .textBanner .text {
+    margin-top: 165px;
+    margin-left: 150px;
 }
 
-.menuBanner .textBanner .text h2{
+.menuBanner .textBanner .text h2 {
     color: #FFFFFF;
     width: 1000px;
     font-size: 60px;
@@ -76,7 +83,7 @@ body {
     word-spacing: 5px;
 }
 
-.menuBanner .textBanner .text h5{
+.menuBanner .textBanner .text h5 {
     color: #C5C5C5;
     font-family: 'JetBrains Mono', monospace;
     font-size: 18px;
@@ -85,140 +92,140 @@ body {
     word-spacing: 5px;
 }
 
-.menuBanner .textBanner .text .bTemplate button{
+.menuBanner .textBanner .text .bTemplate button {
     padding: 20px 30px;
-    background-color: #FFFFFF;
-    border: 2px solid #bfbfbf;
-    border-radius: 25px;
-    color: #707070;
+    background-color: #386DBD;
+    border-radius: 7px;
+    border-style: none;
+    color: rgb(255, 255, 255);
     font-size: 14px;
     font-weight: 700;
-    box-shadow: 0px 0px 30px ghostwhite;
+    box-shadow: 0px 0px 45px 10px rgba(90.26999999999998, 155.98830434782607, 200.6, 0.5);
     transition: transform 200ms linear;
     animation: moveDown 1.5s ease-out;
-    margin: 15px;
-    
 }
 
 @keyframes moveDown {
-    0%{
+    0% {
         transform: translateY(-75px);
         opacity: 0;
     }
-    100%{
+
+    100% {
         transform: translateY(0px);
-            opacity: 1;
+        opacity: 1;
     }
 }
 
 
-.menuBanner .textBanner .text .bTemplate button:hover{
+.menuBanner .textBanner .text .bTemplate button:hover {
     transform: scale(1.1);
-    background-color: #707070;
-    color: #FFFFFF;
-    border: 2px solid black;
+    background-color: #ffffff;
+    color: #386DBD;
 }
 
 /* ------------------------------------------ */
 /* ------------- Menu Principal ------------- */
 
-.mainLanguages{
+.mainLanguages {
     background: #121212;
     width: 100%;
-    height: 700px;
+    height: 100%;
 }
 
-.mainLanguages .mainInfo{
-    padding: 10px 0px 0px;
-    margin: 30px 400px 50px;
+.mainLanguages .mainInfo {
+    padding: 15px 0px 0px;
+    margin: 0px 150px;
 }
 
-.mainLanguages .mainInfo h1{
-    color:#FFFFFF;
+.mainLanguages .mainInfo h1 {
+    color: #FFFFFF;
     font-size: 50px;
     font-family: 'Roboto Condensed', sans-serif;
 }
 
-.mainLanguages .mainInfo h3{
+.mainLanguages .mainInfo h3 {
     font: 19px;
-    font-family: 'JetBrains Mono', monospace;;
+    font-family: 'JetBrains Mono', monospace;
+    ;
     color: #C5C5C5;
     line-height: 1.2em;
     word-spacing: 7px;
 }
 
-.mainLanguages .mainInfo h3 span{
+.mainLanguages .mainInfo h3 span {
     color: #F9C349;
 }
 
-.languages{
+.languages {
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
-.languages .html{
+.languages .html {
     display: flex;
     align-items: center;
     flex-direction: column;
     height: 532px;
     width: 357px;
-    border:3px solid #534C8A;
+    border: 3px solid #534C8A;
     border-radius: 10px;
     margin: 5px;
     padding: 20px;
     background-color: #0F0D20;
 }
 
-.languages .css{
+.languages .css {
     display: flex;
     align-items: center;
     flex-direction: column;
     height: 532px;
     width: 357px;
-    border:3px solid #4F8566;
+    border: 3px solid #4F8566;
     border-radius: 10px;
     margin: 5px;
     padding: 20px;
     background-color: #0C1A12;
 }
 
-.languages .js{
-display: flex;
+.languages .js {
+    display: flex;
     align-items: center;
     flex-direction: column;
     height: 532px;
     width: 357px;
-    border:3px solid #5E293A;
+    border: 3px solid #5E293A;
     border-radius: 10px;
     margin: 5px;
     padding: 20px;
     background-color: #13090C;
 }
 
-.languages img{
+.languages img {
     border-radius: 20px;
     width: 250px;
     height: 250px;
 }
 
-.languages .c1{
+.languages .c1 {
     padding: 0px 0px 10px;
 }
 
-.languages h5{
+.languages h5 {
     display: flex;
     justify-content: space-between;
     color: #FFFFFF;
     font-size: 16px;
-    font-family: 'JetBrains Mono', monospace;;
+    font-family: 'JetBrains Mono', monospace;
+    ;
 }
 
-.languages .LanInfo{
-    border-top: 3px solid #F9C349;
+.languages .LanInfo {
+    border-top: 2px solid #F9C349;
 }
 
-.languages .LanInfo p{
+.languages .LanInfo p {
     padding-top: 15px;
     font-family: 'Roboto Mono', monospace;
     font-size: 16px;
@@ -227,8 +234,75 @@ display: flex;
     margin: 0px
 }
 
-.languages .LanInfo p span{
+.languages .LanInfo p span {
     color: #F9C349;
 }
 
+.languages .bTemplate {
+    display: flex;
+    justify-content: flex-start;
+    width: 350px;
+    height: 63px;
+    padding-top: 45px;
+}
 
+.languages .html .bTemplate button {
+    padding: 20px 30px;
+    background-color: #251E62;
+    border-radius: 7px;
+    border-style: none;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    font-weight: 700;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    box-shadow: 0px 0px 45px 10px rgba(37.000000000000036, 29.999999999999996, 98.00000000000001, 0.52);
+    transition: transform 200ms linear;
+    animation: moveDown 1.5s ease-out;
+}
+
+.languages .css .bTemplate button {
+    padding: 20px 30px;
+    background-color: #17984F;
+    border-radius: 7px;
+    border-style: none;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    font-weight: 700;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 45px 10px rgba(23.000000000000018, 152.00000000000003, 79.00000000000006, 0.33);
+    transition: transform 200ms linear;
+    animation: moveDown 1.5s ease-out;
+}
+
+.languages .js .bTemplate button {
+    padding: 20px 30px;
+    background-color: #590621;
+    border-radius: 7px;
+    border-style: none;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    font-weight: 700;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 45px 10px rgba(89.00000000000001, 6.000000000000015, 33.00000000000012, 0.43);
+    transition: transform 200ms linear;
+    animation: moveDown 1.5s ease-out;
+}
+
+.languages .html .bTemplate button:hover{
+    transform: scale(1.1);
+    color:#251E62;
+    background-color: #a29af0;
+}
+
+.languages .css .bTemplate button:hover{
+    transform: scale(1.1);
+    color: #17984F;
+    background-color: #7bdcb5;
+}
+
+.languages .js .bTemplate button:hover{
+    transform: scale(1.1);
+    color: #590621;
+    background-color: #f78da7;
+}
