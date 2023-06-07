@@ -2,7 +2,7 @@ body {
     margin: 0px;
     background-color: black;
     overflow-x: hidden;
-    background-image:url("img/FUNDO-1.jpg");
+    background-image:url("img/bannerImg.jpg");
     justify-content: center;
     background-position: center;
     background-repeat: no-repeat;
@@ -12,20 +12,16 @@ body {
 
 
 .HEADER_SECAO{
-    width: 100%;
-    background-image:linear-gradient(180deg, rgba(0,0,0,0) 0%, #121212 100%);
+    width: 100%; 
+    display: flex;
     justify-content: center;
-    background-position: center;
-    background-repeat: repeat-x;
-    background-size: cover;
-    background-attachment: fixed;
-    overflow: hidden;
+    flex-direction: column;
+    background-image:linear-gradient(0deg, rgba(0,0,0,0) 0%, #121212 100%);
 }        
 
 
 .header {
-    width: 1800px;
-    height: 100%;
+    width: 100%;
     margin-top: 20px;
 }
 
@@ -52,19 +48,20 @@ body {
 }   
 
 .Link_HeaderNITARO{
-    margin: 0px;
     display: flex;
-    justify-content: right;
+    justify-content: flex-end;
     width: 100%;
     padding-right: 400px;
 }
 
-.Link_HeaderNITARO .texto1{
+.Link_HeaderNITARO a{
     font-family: "JetBrains Mono", sans-serif;
     color: #ffffff;
     margin: 8px;
     display: flex;
     justify-content: right;
+    text-decoration: none;
+    font-weight: bolder;
 }
 
 .texto1:visited{
@@ -125,10 +122,9 @@ body {
 
 .Secao1{
     background-image:linear-gradient(180deg, rgba(0,0,0,0) 0%, #121212 100%);
-    width: 1300px;
+    width: 100%;
     height: 550px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 250px;
     padding: 80px 75px 25px 0px;
     justify-items: center;
     justify-content: center;
