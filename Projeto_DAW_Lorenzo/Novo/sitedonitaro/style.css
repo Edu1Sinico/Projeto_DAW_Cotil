@@ -16,7 +16,7 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    background-image:linear-gradient(0deg, rgba(0,0,0,0) 0%, #121212 100%);
+    background-image:linear-gradient(0deg, rgba(0,0,0,0) 10%, #121212 100%);
 }        
 
 
@@ -124,17 +124,19 @@ body {
     background-image:linear-gradient(180deg, rgba(0,0,0,0) 0%, #121212 100%);
     width: 100%;
     height: 550px;
-    margin-left: 250px;
     padding: 80px 75px 25px 0px;
     justify-items: center;
     justify-content: center;
+}
+
+.infoBanner{
+    margin-left: 170px;
 }
 
 .textoApresentacao{
     font-family: "Fira Mono", sans-serif;
     font-size: 40px;
     font-weight: 700;
-    margin: 0px;
     padding-left: 30px;
     display: flex;
     justify-content: left;
@@ -313,25 +315,26 @@ body {
         height: 250px;
     }
 
-    .languages .c1 {
-        padding: 0px 0px 10px;
-        margin-right: 300px;
-    }
-
-    .languages .c2 {
-        padding: 0px 0px 10px;
-        margin-right: 250px;
+    .linha{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
     }
     
     .languages .stars1{
-        margin-left: 200px;
-        margin-top: -55px;
+        display: flex;
+        flex-direction: row;
         padding-bottom: 10px;
         display: flex;
         justify-content: space-between;
         color: #FFFFFF;
         font-size: 16px;
         font-family: 'JetBrains Mono', monospace;
+    }
+
+    .languages .stars1 span{
+        color: #f0ad4e;
     }
 
     
@@ -784,13 +787,12 @@ body {
         border-style: none;
         border: 3px solid #386DBD;
         box-shadow: 0px 0px 45px 10px rgba(65, 162, 226, 0.274);
-        transition: transform 200ms linear;
+        transition: box-shadow 200ms ease-in-out, transform 300ms ease-in-out;
     }
 
     .Secao4 .retangulo:hover{
         box-shadow: 0px 0px 45px 10px rgba(65, 162, 226, 0.397);
-        transition: transform 200ms linear;
-        transition-delay: 1s;
+        transform: scale(1.1);
     }
 
     .Secao4 .retangulo .title{
