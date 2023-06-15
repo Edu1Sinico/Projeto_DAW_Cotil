@@ -26,51 +26,65 @@
     <section class="main">
         <div class="text1">
             <p>
-                Our <span>templates</span> for your website. 
+                Our <span>templates</span> for your website.
             </p>
         </div>
 
-        
-        <div class="iframes"> </div>
 
-
-
-        <div class="tabs">
-            <div class="tab-links">
-              <a href="#tab1"><button class="bSite1">Site 1</button></a>
-              <a href="#tab2"><button class="bSite2">Site 2</button></a>
-              <a href="#tab3"><button class="bSite3">Site 3</button></a>
+        <div class="navDIV">
+            <nav>
+                <a href="#" onclick="showContent(1)"><button class="btNAV1">Site 1</button></a>
+                <a href="#" onclick="showContent(2)"><button class="btNAV2">Site 2</button></a>
+                <a href="#" onclick="showContent(3)"><button class="btNAV3">Site 3</button></a>
+            </nav>
+        </div>
+        <div class="content" id="content1">
+            <iframe frameborder="0" scrolling="yes" src="https://www.okler.net/previews/porto/9.9.2/" alt="SITE2"
+                style="height: 400px; width: 800px">
+            </iframe>
+            <div class="quadradoDownload">
+                <a href="sites/SITE DOWNLOAD 2.txt" download>
+                <button class="botaoquadrado">GET THIS TEAMPLEATE</button>
+            </a>
             </div>
-            
-            <div class="tab-content" id="tab1">
-                <iframe frameborder="0" scrolling="yes"
-                    src="https://www.okler.net/previews/porto/9.9.2/" alt="SITE2"
-                    style="height: 400px; width: 800px">
-                </iframe>         
+        </div>
+        <div class="content" id="content2">
+            <iframe frameborder="0" scrolling="yes" src="https://invart.pro/blackoid/" alt="SITE2"
+                style="height: 400px; width: 800px">
+            </iframe>
+            <div class="quadradoDownload">
+                <a href="sites/SITE DOWNLOAD 3.txt" download>
+                <button class="botaoquadrado">GET THIS TEAMPLEATE</button>
+                </a>
             </div>
-            
-            <div class="tab-content" id="tab2">
-                <iframe frameborder="0" scrolling="yes"
-                    src="https://invart.pro/blackoid/" alt="SITE2"
-                    style="height: 400px; width: 800px">
-                </iframe>
+        </div>
+        <div class="content" id="content3">
+            <iframe frameborder="0" scrolling="yes" src="https://squaretypetheme.com/" alt="SITE3"
+                style="height: 400px; width: 800px">
+            </iframe>
+            <div class="quadradoDownload">
+                <a href="sites/SITE DONWLOAD 1.txt" download>
+                <button class="botaoquadrado">GET THIS TEAMPLEATE</button>
+                </a>
             </div>
-            
-            <div class="tab-content" id="tab3">
-                <iframe frameborder="0" scrolling="yes"
-                    src="https://squaretypetheme.com/" alt="SITE3"
-                    style="height: 400px; width: 800px">
-                </iframe>         
-            </div>
-          </div>
+        </div>
 
 
+        <script>
+            function showContent(index) {
+                var contents = document.getElementsByClassName('content');
+                for (var i = 0; i < contents.length; i++) {
+                    contents[i].classList.remove('active');
+                }
+                document.getElementById('content' + index).classList.add('active');
+            }
+        </script>
 
 
 
         <div class="text2">
             <p>
-                 Incredible sites made only using <span>HTML</span>. 
+                Incredible sites made only using <span>HTML</span>.
             </p>
         </div>
 
@@ -78,40 +92,38 @@
 
             <div class="iframeHTML">
                 <iframe frameborder="0" scrolling="yes"
-                            src="https://klipsan-fluid-demo-pt.squarespace.com?nochrome=true" title="Cailles"
-                            style="height: 400px; width: 800px">
-                        </iframe>
+                    src="https://klipsan-fluid-demo-pt.squarespace.com?nochrome=true" title="Cailles"
+                    style="height: 400px; width: 800px">
+                </iframe>
 
-                        <div class="textbox">
-                            <textarea readonly rows="23" cols="59">CODIGO HTML</textarea>
-                      </div>
-                </div>
-                        <br>
-                        <br>
-            <div class="iframeHTML">
-                        <iframe frameborder="0" scrolling="yes"
-                            src="https://pazari-fluid-demo-pt.squarespace.com?nochrome=true" title="Cailles"
-                            style="height: 400px; width: 800px">
-                        </iframe>
-
-                        <div class="textbox">
-                            <textarea readonly rows="23" cols="59">CODIGO HTML</textarea>
-                      </div>
-                    </div>
-
-                      <br>
-                      <br>
-            <div class="iframeHTML">
-                        <iframe frameborder="0" scrolling="yes"
-                            src="https://colima-fluid-demo-pt.squarespace.com?nochrome=true" title="Cailles"
-                            style="height: 400px; width: 800px">
-                        </iframe>
-            <div class="textbox">
+                <div class="textbox">
                     <textarea readonly rows="23" cols="59">CODIGO HTML</textarea>
+                </div>
             </div>
+            <br>
+            <br>
+            <div class="iframeHTML">
+                <iframe frameborder="0" scrolling="yes" src="https://pazari-fluid-demo-pt.squarespace.com?nochrome=true"
+                    title="Cailles" style="height: 400px; width: 800px">
+                </iframe>
+
+                <div class="textbox">
+                    <textarea readonly rows="23" cols="59">CODIGO HTML</textarea>
+                </div>
             </div>
 
-            </div>  
+            <br>
+            <br>
+            <div class="iframeHTML">
+                <iframe frameborder="0" scrolling="yes" src="https://colima-fluid-demo-pt.squarespace.com?nochrome=true"
+                    title="Cailles" style="height: 400px; width: 800px">
+                </iframe>
+                <div class="textbox">
+                    <textarea readonly rows="23" cols="59">CODIGO HTML</textarea>
+                </div>
+            </div>
+
+        </div>
 
 
 
@@ -121,9 +133,9 @@
 
 
         <div class="text3">
-                <p>
-                    Incredible sites made onyl using <span>CSS</span>. 
-               </p>
+            <p>
+                Incredible sites made onyl using <span>CSS</span>.
+            </p>
         </div>
         <div class="Animations">
 
@@ -143,8 +155,7 @@
                         </p>
 
                         <div class="textboxCSS">
-                            <input id="text-input" class="text-input" type="text"
-                            value="<button>Shadow</button>">
+                            <input id="text-input" class="text-input" type="text" value="<button>Shadow</button>">
                         </div>
 
                         <p>
@@ -152,10 +163,9 @@
                         </p>
 
                         <div class="textboxCSS">
-                            <input id="text-input" class="text-input" type="text"
-                            value="<button>Shadow</button>">
+                            <input id="text-input" class="text-input" type="text" value="<button>Shadow</button>">
                         </div>
-                        </div>
+                    </div>
                 </div>
 
 
@@ -173,8 +183,7 @@
                         </p>
 
                         <div class="textboxCSS">
-                            <input id="text-input" class="text-input" type="text"
-                            value="<button>Shadow</button>">
+                            <input id="text-input" class="text-input" type="text" value="<button>Shadow</button>">
                         </div>
 
                         <p>
@@ -182,10 +191,9 @@
                         </p>
 
                         <div class="textboxCSS">
-                            <input id="text-input" class="text-input" type="text"
-                            value="<button>Shadow</button>">
+                            <input id="text-input" class="text-input" type="text" value="<button>Shadow</button>">
                         </div>
-                        </div>
+                    </div>
                 </div>
 
                 <div class="tres3">
@@ -202,8 +210,7 @@
                         </p>
 
                         <div class="textboxCSS">
-                            <input id="text-input" class="text-input" type="text"
-                            value="<button>Shadow</button>">
+                            <input id="text-input" class="text-input" type="text" value="<button>Shadow</button>">
                         </div>
 
                         <p>
@@ -211,10 +218,9 @@
                         </p>
 
                         <div class="textboxCSS">
-                            <input id="text-input" class="text-input" type="text"
-                            value="<button>Shadow</button>">
+                            <input id="text-input" class="text-input" type="text" value="<button>Shadow</button>">
                         </div>
-                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -233,8 +239,7 @@
                         </p>
 
                         <div class="textboxCSS">
-                            <input id="text-input" class="text-input" type="text"
-                            value="<button>Shadow</button>">
+                            <input id="text-input" class="text-input" type="text" value="<button>Shadow</button>">
                         </div>
 
                         <p>
@@ -242,10 +247,9 @@
                         </p>
 
                         <div class="textboxCSS">
-                            <input id="text-input" class="text-input" type="text"
-                            value="<button>Shadow</button>">
+                            <input id="text-input" class="text-input" type="text" value="<button>Shadow</button>">
                         </div>
-                        </div>
+                    </div>
                 </div>
 
                 <div class="dois2">
@@ -262,8 +266,7 @@
                         </p>
 
                         <div class="textboxCSS">
-                            <input id="text-input" class="text-input" type="text"
-                            value="<button>Shadow</button>">
+                            <input id="text-input" class="text-input" type="text" value="<button>Shadow</button>">
                         </div>
 
                         <p>
@@ -271,10 +274,9 @@
                         </p>
 
                         <div class="textboxCSS">
-                            <input id="text-input" class="text-input" type="text"
-                            value="<button>Shadow</button>">
+                            <input id="text-input" class="text-input" type="text" value="<button>Shadow</button>">
                         </div>
-                        </div>
+                    </div>
                 </div>
 
                 <div class="tres3">
@@ -291,8 +293,7 @@
                         </p>
 
                         <div class="textboxCSS">
-                            <input id="text-input" class="text-input" type="text"
-                            value="<button>Shadow</button>">
+                            <input id="text-input" class="text-input" type="text" value="<button>Shadow</button>">
                         </div>
 
                         <p>
@@ -300,10 +301,9 @@
                         </p>
 
                         <div class="textboxCSS">
-                            <input id="text-input" class="text-input" type="text"
-                            value="<button>Shadow</button>">
+                            <input id="text-input" class="text-input" type="text" value="<button>Shadow</button>">
                         </div>
-                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -315,7 +315,7 @@
 
         <div class="text4">
             <p>
-            Incredible sites made onyl using <span>Java Script</span>. 
+                Incredible sites made onyl using <span>Java Script</span>.
             </p>
         </div>
 
@@ -336,31 +336,28 @@
                         <p>
                             HTML
                         </p>
-                            <div class="textboxJS">
-                                <input id="text-input" class="text-input" type="text"
-                                value="<button>Shadow</button>">
-                            </div>
+                        <div class="textboxJS">
+                            <input id="text-input" class="text-input" type="text" value="<button>Shadow</button>">
                         </div>
+                    </div>
 
-                        <div class="JSinfo">
+                    <div class="JSinfo">
                         <p>
                             CSS
                         </p>
-                            <div class="textboxJS">
-                                <input id="text-input" class="text-input" type="text"
-                                value="<button>Shadow</button>">
-                            </div>
+                        <div class="textboxJS">
+                            <input id="text-input" class="text-input" type="text" value="<button>Shadow</button>">
                         </div>
+                    </div>
 
-                        <div class="JSinfo">
+                    <div class="JSinfo">
                         <p>
                             JS
                         </p>
-                            <div class="textboxJS">
-                                <input id="text-input" class="text-input" type="text"
-                                value="<button>Shadow</button>">
-                            </div>
+                        <div class="textboxJS">
+                            <input id="text-input" class="text-input" type="text" value="<button>Shadow</button>">
                         </div>
+                    </div>
                 </div>
 
 
@@ -378,32 +375,29 @@
                         <p>
                             HTML
                         </p>
-                            <div class="textboxJS">
-                                <input id="text-input" class="text-input" type="text"
-                                value="<button>Shadow</button>">
-                            </div>
+                        <div class="textboxJS">
+                            <input id="text-input" class="text-input" type="text" value="<button>Shadow</button>">
                         </div>
+                    </div>
 
-                        <div class="JSinfo">
+                    <div class="JSinfo">
                         <p>
                             CSS
                         </p>
-                            <div class="textboxJS">
-                                <input id="text-input" class="text-input" type="text"
-                                value="<button>Shadow</button>">
-                            </div>
+                        <div class="textboxJS">
+                            <input id="text-input" class="text-input" type="text" value="<button>Shadow</button>">
                         </div>
+                    </div>
 
-                        <div class="JSinfo">
+                    <div class="JSinfo">
                         <p>
                             JS
                         </p>
-                            <div class="textboxJS">
-                                <input id="text-input" class="text-input" type="text"
-                                value="<button>Shadow</button>">
-                            </div>
+                        <div class="textboxJS">
+                            <input id="text-input" class="text-input" type="text" value="<button>Shadow</button>">
                         </div>
                     </div>
+                </div>
 
 
 
@@ -420,32 +414,29 @@
                         <p>
                             HTML
                         </p>
-                            <div class="textboxJS">
-                                <input id="text-input" class="text-input" type="text"
-                                value="<button>Shadow</button>">
-                            </div>
+                        <div class="textboxJS">
+                            <input id="text-input" class="text-input" type="text" value="<button>Shadow</button>">
                         </div>
+                    </div>
 
-                        <div class="JSinfo">
+                    <div class="JSinfo">
                         <p>
                             CSS
                         </p>
-                            <div class="textboxJS">
-                                <input id="text-input" class="text-input" type="text"
-                                value="<button>Shadow</button>">
-                            </div>
+                        <div class="textboxJS">
+                            <input id="text-input" class="text-input" type="text" value="<button>Shadow</button>">
                         </div>
+                    </div>
 
-                        <div class="JSinfo">
+                    <div class="JSinfo">
                         <p>
                             JS
                         </p>
-                            <div class="textboxJS">
-                                <input id="text-input" class="text-input" type="text"
-                                value="<button>Shadow</button>">
-                            </div>
+                        <div class="textboxJS">
+                            <input id="text-input" class="text-input" type="text" value="<button>Shadow</button>">
                         </div>
                     </div>
+                </div>
 
 
             </div>
