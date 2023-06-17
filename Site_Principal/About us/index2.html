@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel ="icon" type="image/x-icon" href="img/logoSite.ico">
+    <link rel="stylesheet" href="style2.css">
+    </head>
+    <body>
+
+        <header>
+            <div class="headerDIV">
+            <h1>About Us</h1>
+            <h2>𝐗</h2>
+            <img src="img/logoSite.png" alt="Logo" id="logo">
+            </div>
+        </header>
+        
+        <div class="navDIV">
+            <nav>
+                <a href="#" onclick="showMainContent(1)"><button class="btNAV1">WHO ARE WE</button></a>
+                <a href="#" onclick="showMainContent(2)"><button class="btNAV2">ABOUT SITES</button></a>
+                <a href="#" onclick="showMainContent(3)"><button class="btNAV3">OUR CLIENTS</button></a>
+                <a href="#" onclick="showMainContent(4)"><button class="btNAV4">SERVICES</button></a>
+            </nav>
+        </div>
+        
+        <div class="content" id="content1">
+            <div class="textoAboutUs">
+                <p>
+                    We make sure you have the best website in your field!
+                </p>
+        
+                <h3>
+                    Welcome to our company! We are an international leader in providing top-quality templates and professional website creation services. With our expert team of designers and developers, 
+                    we guarantee that your website will be the best in your industry.
+                    <br>
+                    <br>
+                    Choose us for your website needs, and we'll ensure your website stands out and drives business growth. 
+                    Let us turn your vision into a stunning reality that captivates your audience.
+                    <br>
+                    <br>
+                </h3>
+                <h4>
+                    By partnering with us, our clients can expect to achieve several key goals:
+                </h4>
+                <h5>
+                    <ul>
+                    <li>Establish a Professional Brand Identity.</li>
+                    <br>
+                    <li>Increase Online Visibility.</li>
+                    <br>
+                    <li>Our websites are optimized for search engines, ensuring that our clients' businesses rank higher in search results.</li>
+                    <br>
+                    <li>Engage and Convert Visitors.</li>
+                    </ul>
+                </h5>
+        
+            </div>
+            <div class="imagemAboutUs">
+                <img src="img/BUILDING.jpg" alt="imagemAboutUs">
+            </div>
+        </div>
+        
+        
+        
+        
+        <div class="content" id="content2">
+            <div class="navDIV_Content2">
+                <nav>
+                    <a href="#" onclick="showSubContent(5)"><button class="btNAV5">LANDING PAGE</button></a>
+                    <a href="#" onclick="showSubContent(6)"><button class="btNAV6">ECOMMERCE</button></a>
+                    <a href="#" onclick="showSubContent(7)"><button class="btNAV7">BLOGS</button></a>
+                </nav>
+            </div>
+        
+            <div class="content_2" id="contentDois5">
+
+                <div class="imagemLP">
+                <img src="img/SITE-1.png" alt="imagemLP">
+                <img src="img/SITE-2.png" alt="imagemLP">
+                <img src="img/SITE-3.png" alt="imagemLP">
+                </div>
+            </div>
+            <div class="content_2" id="contentDois6">
+
+                <div class="imagemEC">
+                <img src="https://encurtador.com.br/aCDNP" alt="imagemEC">
+                <img src="https://encurtador.com.br/ensv5" alt="imagemEC">
+                <img src="https://encurtador.com.br/ovJT9" alt="imagemEC">
+                </div>
+        
+            </div>
+            <div class="content_2" id="contentDois7">
+                <div class="imagemBLOG">
+                <img src="img/BLOG1 (1).png" alt="imagemEC">
+                <img src="img/BLOG1 (2).png" alt="imagemEC">
+                <img src="img/BLOG1 (3).png" alt="imagemEC">
+                </div>
+            </div>
+        </div>
+        
+        <div class="content" id="content3">
+            <div class="divContent3">
+                <div class="imagem1">
+                    <img class="img1" src="img/CLIENT 1.PNG" alt="Clientes">
+                    <img class="img4" src="img/CLIENT 4.PNG" alt="Clientes">
+                    <img class="img5" src="img/CLIENT 5.PNG" alt="Clientes">
+                </div>
+                <div class="imagem2">
+                    <img class="img2" src="img/CLIENT 2.PNG" alt="Clientes">
+                    <img class="img3" src="img/CLIENT 3.PNG" alt="Clientes">
+                </div>
+            </div>
+        </div>
+        
+        <div class="content" id="content4">
+            <div class="divContent4">
+            <a href="img/Price.txt" download>
+                <img class="img1" src="img/SERVICE 1.PNG" alt="Service">
+                <img class="img2" src="img/SERVICE 2.PNG" alt="Service">
+                <img class="img3" src="img/SERVICE 3.PNG" alt="Service">
+                <img class="img4" src="img/SERVICE 4.PNG" alt="Service">
+            </a>
+            </div>
+        </div>
+        
+        <!-- Script para o primeiro conjunto de botões -->
+        <script>
+            function showMainContent(index) {
+                var contents = document.getElementsByClassName('content');
+                for (var i = 0; i < contents.length; i++) {
+                    contents[i].classList.remove('active');
+                }
+                document.getElementById('content' + index).classList.add('active');
+            }
+        </script>
+        
+        <!-- Script para o segundo conjunto de botões -->
+        <script>
+            function showSubContent(index) {
+                var contents = document.getElementsByClassName('content_2');
+                for (var i = 0; i < contents.length; i++) {
+                    contents[i].classList.remove('active');
+                }
+                document.getElementById('contentDois' + index).classList.add('active');
+            }
+        </script>        
+
+</body>
+</html>
