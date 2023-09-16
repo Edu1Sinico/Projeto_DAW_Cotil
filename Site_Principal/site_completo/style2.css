@@ -589,10 +589,12 @@ nav a .btNAV4:hover {
 
 
 
-
+/* ------------------------------------ Seção Nossos Clientes ------------------------------------ */
 .content .divContent3 {
   width: 100%;
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .content .divContent3 .imagem1 {
@@ -607,7 +609,6 @@ nav a .btNAV4:hover {
   display: flex;
   justify-content: left;
   justify-items: center;
-  margin-left: 50vh;
   width: 400px;
   border-radius: 10px;
 }
@@ -618,7 +619,6 @@ nav a .btNAV4:hover {
   justify-items: center;
   width: 400px;
   border-radius: 10px;
-  margin-left: 50vh;
   margin-top: 5px;
 }
 
@@ -628,7 +628,6 @@ nav a .btNAV4:hover {
   justify-items: center;
   width: 400px;
   border-radius: 10px;
-  margin-left: 50vh;
   margin-top: 5px;
 }
 
@@ -650,26 +649,67 @@ nav a .btNAV4:hover {
   margin: 5px;
 }
 
+
+
+/* ------------------------------------ responsividade na seção nossos clientes ------------------------------------ */
 @media (min-width: 320px) and (max-width: 480px) {
-  
+  .content .divContent3 .imagem1 .img-client{
+    width: 350px;
+  }
+
+  .content .divContent3 .imagem2 .img-client{
+    width: 350px;
+  }
 }
 
 
 
 @media (min-width: 481px) and (max-width: 767px) {
-  
+  .content .divContent3 .imagem1 .img-client{
+    width: 375px;
+  }
+
+  .content .divContent3 .imagem2 .img-client{
+    width: 375px;
+  }
 }
 
 
 
 @media (min-width: 768px) and (max-width: 1024px) {
+  .content .divContent3 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
 
+  .content .divContent3 .imagem1 .img-client{
+    width: 350px;
+  }
+
+  .content .divContent3 .imagem2 .img-client{
+    width: 350px;
+  }
 }
 
 
 
 @media (min-width: 1025px) and (max-width: 1280px) {
+  .content .divContent3 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
 
+  .content .divContent3 .imagem1 .img-client{
+    width: 370px;
+  }
+
+  .content .divContent3 .imagem2 .img-client{
+    width: 370px;
+  }
 }
 
 
@@ -677,13 +717,14 @@ nav a .btNAV4:hover {
 
 
 
-
+/* ------------------------------------ Conteúdo de Serviços ------------------------------------ */
 .content .divContent4 {
   width: 100%;
   display: flex;
   padding-top: 10px;
   justify-content: center;
   justify-items: center;
+  flex-wrap: wrap;
 }
 
 
@@ -694,70 +735,85 @@ nav a .btNAV4:hover {
   justify-items: center;
 }
 
-
-.content .divContent4 .img1 {
+.content .divContent4 a .card1 img{
   border-radius: 30px;
   width: 240px;
   margin: 10px;
-  transition: transform 300ms linear;
+  transition: transform 0.3s ease-in-out;
 }
 
-.content .divContent4 .img1:hover {
+.content .divContent4 a .card1 img:hover {
   transform: scale(1.05);
 }
 
-.content .divContent4 .img2 {
+.content .divContent4 a .card2 img {
   border-radius: 30px;
   width: 240px;
   margin: 10px;
-  transition: transform 300ms linear;
+  transition: transform 0.3s ease-in-out;
 }
 
-.content .divContent4 .img2:hover {
+.content .divContent4 a .card2 img:hover {
   transform: scale(1.05);
 }
 
-.content .divContent4 .img3 {
-  border-radius: 30px;
-  width: 240px;
-  margin: 10px;
-  transition: transform 300ms linear;
-}
 
-.content .divContent4 .img3:hover {
-  transform: scale(1.05);
-}
 
-.content .divContent4 .img4 {
-  border-radius: 30px;
-  width: 240px;
-  margin: 10px;
-  transition: transform 300ms linear;
-}
-
-.content .divContent4 .img4:hover {
-  transform: scale(1.05);
-}
-
+/* ------------------------------------ Media Query do Conteúdo de Serviços ------------------------------------ */
 @media (min-width: 320px) and (max-width: 480px) {
-  
+  .content .divContent4 a .card1 img {
+    width: 170px;
+    margin: 5px;
+  }
+  .content .divContent4 a .card2 img {
+    width: 170px;
+    margin: 5px;
+  }
 }
 
 
 
 @media (min-width: 481px) and (max-width: 767px) {
-  
+
+
+  .content .divContent4 a .card1 img {
+    width: 200px;
+  }
+  .content .divContent4 a .card2 img {
+    width: 200px;
+  }
 }
 
 
 @media (min-width: 768px) and (max-width: 1024px) {
+  .content .divContent4 {
+    display: flex;
+    flex-wrap: nowrap;
+  }
 
+  .content .divContent4 a .card1 img {
+    width: 220px;
+  }
+  .content .divContent4 a .card2 img {
+    width: 220px;
+  }
 }
 
 
 
 @media (min-width: 1025px) and (max-width: 1280px) {
+  .content .divContent4 {
+    display: flex;
+    flex-wrap: nowrap;
+  }
 
+  .content .divContent4 a .card1 img {
+    width: 230px;
+  }
+  .content .divContent4 a .card2 img {
+    width: 230px;
+  }
+  
 }
 
 
@@ -765,7 +821,7 @@ nav a .btNAV4:hover {
 
 
 
-
+/* ------------------------------------ Conteúdo de Landing Page ------------------------------------  */
 .content {
   display: none;
   padding: 20px;
@@ -806,10 +862,11 @@ nav a .btNAV4:hover {
   display: flex;
   justify-content: center;
   justify-items: center;
+  flex-wrap: wrap;
 }
 
 .content_2 .imagemEC img {
-  width: 500px;
+  width: 450px;
   margin: 10px;
   border-radius: 10px;
 }
@@ -819,43 +876,85 @@ nav a .btNAV4:hover {
   display: flex;
   justify-content: center;
   justify-items: center;
+  flex-wrap: wrap;
 }
 
 .content_2 .imagemBLOG img {
-  width: 500px;
+  width: 450px;
   margin: 10px;
   border-radius: 10px;
 }
 
 
 
-
+/* ------------------------------------ Responsividade do Landing Page ------------------------------------ */
 @media (min-width: 320px) and (max-width: 480px) {
+
   .content_2 .imagemLP{
     display: flex;
     flex-direction: column;
-    /* justify-content: center;
-    align-items: center; */
   }
 
   .content_2 .imagemLP img{
     width: 350px;
     margin: 5px;
   }
+
+  .content_2 .imagemBLOG{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .content .imagemBLOG img{
+    width: 350px;
+  }
+
+  .content_2 .imagemEC {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .content_2 .imagemEC img {
+    width: 350px;
+  }
 }
 
 
 
 @media (min-width: 481px) and (max-width: 767px) {
+
   .content_2 .imagemLP{
     display: flex;
     flex-direction: column;
     align-items: center;
-
   }
 
   .content_2 .imagemLP img{
-    width: 425px;
+    display: flex;
+    align-self: center;
+    width: 400px;
+  }
+
+  .content_2 .imagemBLOG{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .content .imagemBLOG img{
+    width: 400px;
+  }
+
+  .content_2 .imagemEC {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .content_2 .imagemEC img {
+    width: 400px;
   }
 }
 
@@ -865,12 +964,27 @@ nav a .btNAV4:hover {
   .content_2 .imagemLP img{
     width: 395px;
   }
+
+  .content_2 .imagemBLOG img{
+    width: 395px;
+  }
+
+  .content_2 .imagemEC img {
+    width: 395px;
+  }
 }
 
 
 
 @media (min-width: 1025px) and (max-width: 1280px) {
   .content_2 .imagemLP img{
+    width: 400px;
+  }
+
+  .content_2 .imagemBLOG img{
+    width: 400px;
+  }
+  .content_2 .imagemEC img {
     width: 400px;
   }
 }
