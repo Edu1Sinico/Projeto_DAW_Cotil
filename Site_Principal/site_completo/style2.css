@@ -270,8 +270,10 @@ nav a .btNAV4:hover {
 
 .btn-imprimir{
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   width: 100%;
+  margin-left: 25vh;
+  margin-top: 55px;
 }
 
 .btn-imprimir button{
