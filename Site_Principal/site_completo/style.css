@@ -1,15 +1,27 @@
 body {
-    margin: 0px;
-    background-color: black;
+    margin:0px auto;
+    overflow: none;
+}
+
+.Section-Global{
+    margin: 0px auto;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     overflow-x: hidden;
     background-image: url("img/bannerImg.jpg");
-    justify-content: center;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
+    background-attachment: fixed;   
 }
 
+button{
+    cursor: pointer;
+}
 
 .HEADER_SECAO {
     width: 100%;
@@ -35,26 +47,14 @@ body {
     padding-top: 10px;
 }
 
-.logoSite {
-    margin: 0px;
-    padding: 10px;
-    display: flex;
-    justify-content: left;
-    width: 65px;
-    height: 65px;
-    margin-top: -25px;
-    padding-left: 400px;
 
-}
-
-.Link_HeaderNITARO {
+.Link_HEADER {
     display: flex;
     justify-content: flex-end;
     width: 100%;
-    padding-right: 400px;
 }
 
-.Link_HeaderNITARO a {
+.Link_HEADER a {
     font-family: "JetBrains Mono", sans-serif;
     color: #ffffff;
     margin: 8px;
@@ -72,7 +72,7 @@ body {
     justify-content: right;
 }
 
-.Link_HeaderNITARO .texto2 {
+.Link_HEADER .texto2 {
     font-family: "JetBrains Mono", sans-serif;
     color: #ffffff;
     margin: 8px;
@@ -88,7 +88,7 @@ body {
     justify-content: right;
 }
 
-.Link_HeaderNITARO .texto3 {
+.Link_HEADER .texto3 {
     font-family: "JetBrains Mono", sans-serif;
     color: #ffffff;
     margin: 8px;
@@ -104,7 +104,7 @@ body {
     justify-content: right;
 }
 
-.Link_HeaderNITARO .texto4 {
+.Link_HEADER .texto4 {
     font-family: "JetBrains Mono", sans-serif;
     color: #ffffff;
     margin: 8px;
@@ -129,15 +129,11 @@ body {
     justify-content: center;
 }
 
-.infoBanner {
-    margin-left: 170px;
-}
 
 .textoApresentacao {
     font-family: "Fira Mono", sans-serif;
     font-size: 40px;
     font-weight: 700;
-    padding-left: 30px;
     display: flex;
     justify-content: left;
     color: white;
@@ -150,7 +146,6 @@ body {
     font-weight: 400;
     margin-top: -60px;
     padding-top: 5px;
-    padding-left: 40px;
     display: flex;
     justify-content: left;
     color: gray;
@@ -159,8 +154,6 @@ body {
 
 
 .divBotaoApresentacao {
-
-    padding-left: 40px;
     width: 100%;
     height: 100%;
 }
@@ -173,7 +166,7 @@ body {
     color: rgb(255, 255, 255);
     font-size: 14px;
     font-weight: 700;
-    box-shadow: 0px 0px 45px 10px rgba(90.26999999999998, 155.98830434782607, 200.6, 0.5);
+    box-shadow: 0px 0px 45px 10px #5a81c942;
     transition: transform 200ms linear;
     animation: moveDown 1.5s ease-out;
     text-decoration: none;
@@ -217,7 +210,181 @@ body {
     color: #386DBD;
 }
 
+/* RESPONSIVIDADE SITE*/
 
+@media (min-width: 900px) {
+    /* Exemplo: Ajustar o tamanho da fonte para telas maiores */
+    /* Estilos para centralizar o conteúdo do cabeçalho */
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+/* Estilos para centralizar os elementos dentro do cabeçalho */
+.navMenu {
+    width: 700px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.logoSite {
+    width: 100%;
+    margin-right: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header .logoSite img {
+    width: 60px;
+}
+
+.Link_HEADER {
+    width: 100%;
+    margin-left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header .Link_HEADER a {
+    width: 80px;
+}
+
+    .Secao1{
+        width: 100%;
+        margin:0px;
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .Secao1 .infoBanner{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Secao1 .infoBanner .textoApresentacao{
+        width: 1000px;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .Secao1 .infoBanner .textoApresentacao2{
+        width: 1000px;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .Secao1 .infoBanner .divBotaoApresentacao{
+        width: 1000px;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+}
+
+@media (max-width: 900px) {
+    /* Exemplo: Ajustar o tamanho da fonte para telas maiores */
+    .HEADER_SECAO{
+        height: 700px;
+    }
+    
+    .header .Link_HEADER{
+    width: 500px;
+    margin-left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+    .Section-Global{
+        margin: 0px auto;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow-x: hidden;
+        background-image: url("img/FUNDO-1.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;   
+    }
+
+    .header{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header .navMenu{
+        width: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header .logoSite{
+        width: 100%;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        border:1px solid black;
+        background-color: #333;
+        border-radius: 10px;
+    }
+    
+    .header .logoSite img{
+        width: 60px;
+    }
+
+    .Secao1{
+        width: 100%;
+        height: 400px;
+        margin:0px;
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .Secao1 .infoBanner{
+        transform: scale(0.65);
+        margin-top: -100px;
+    }
+
+    .Secao1 .infoBanner .textoApresentacao{
+        width: 1000px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .Secao1 .infoBanner .textoApresentacao2{
+        width: 1000px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .Secao1 .infoBanner .divBotaoApresentacao{
+        width: 1000px;
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+/*---------------------------------------//-------------------------------*/
 /* SECAO 2 */
 
 .Secao2 {
@@ -238,7 +405,6 @@ body {
 
 .mainLanguages .mainInfo {
     padding: 20px;
-    margin: 0px 150px;
 }
 
 .mainInfo2 {
@@ -476,6 +642,99 @@ body {
     padding: 20px;
 }
 
+@media (max-width: 1399px) {
+    /* Exemplo: Ajustar o tamanho da fonte para telas maiores */
+    .Secao2{
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Secao2 .secao2-textos{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        height: 200px;
+        transform: scale(0.8);
+    }
+
+    .Secao2 .secao2-textos .mainInfo{
+        text-align: center;
+    }
+
+    .Secao2 .mainLanguages .languages{
+        width: 100%;
+        margin-top: -80px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        transform: scale(0.7);
+    }
+}
+
+@media (min-width: 1400px) {
+    /* Exemplo: Ajustar o tamanho da fonte para telas maiores */
+    .Secao2{
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+    }
+
+    .Secao2 .secao2-textos{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        margin-bottom: 15px;
+        height: 200px;
+    }
+
+    .Secao2 .secao2-textos .mainInfo{
+        text-align: center;
+    }
+
+    .Secao2 .mainLanguages .languages{
+        width: 100%;
+        display: flex;
+        align-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 900px) {
+    /* Exemplo: Ajustar o tamanho da fonte para telas maiores */
+    .Secao2{
+        width: 100%;
+        height: 100%;
+        margin-top: -40px;
+    }
+
+    .Secao2 .secao2-textos{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        margin-bottom: 15px;
+        height: 200px;
+    }
+
+    .Secao2 .secao2-textos .mainInfo{
+        text-align: center;
+    }
+
+    .Secao2 .mainLanguages .languages{
+        width: 100%;
+        margin-left: 0px;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        margin-top: -200px;
+    }
+}
+
 /* SECAO 3 */
 
 .Secao3 {
@@ -494,8 +753,8 @@ body {
 }
 
 .mainCodes .codesInfo {
-    padding: 20px;
-    margin: 0px 150px;
+    padding: 10px;
+    margin: 0px;
 }
 
 .mainCodes {
@@ -778,23 +1037,203 @@ body {
     margin-left: 0vh;
 }
 
+
+@media (min-width: 1500px) {
+    /* Exemplo: Ajustar o tamanho da fonte para telas maiores */
+    .Secao3{
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+    }   
+
+    .Secao3 .mainCodes{
+        width: 100%;
+        margin: 0px;
+}
+
+.Secao3 .mainCodes .codesInfo{
+    margin:1.5vh;
+}
+
+    .Secao3 .mainCodes .codesInfo .title,.codesInfo2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Secao3 .mainCodes .codesInfo .title h1{
+        margin-bottom: 1vh;
+    }
+
+    .Secao3 .mainCodes .Codes_Templates{
+        width: 100%;
+        margin: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+@media (max-width: 1499px) {
+    /* Exemplo: Ajustar o tamanho da fonte para telas maiores */
+    .Secao3{
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+    }   
+
+    .Secao3 .mainCodes{
+        width: 100%;
+        margin: 0px;
+}
+
+.Secao3 .mainCodes .codesInfo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+}
+
+    .Secao3 .mainCodes .codesInfo .title,.codesInfo2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Secao3 .mainCodes .codesInfo .title h1{
+        margin-bottom: 10px;
+    }
+
+    .Secao3 .mainCodes .Codes_Templates{
+        width: 100%;
+        margin: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .Secao3 .mainCodes .Codes_Templates{
+        transform: scale(0.9);
+    }
+    
+    .Secao3 .mainCodes .Codes_Templates:hover{
+        transform: scale(0.9);
+    }
+}
+
+@media (max-width: 1399px) {
+    /* Exemplo: Ajustar o tamanho da fonte para telas maiores */
+    .Secao3{
+        width: 100%;
+        height: 100%;
+        margin-top: -100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }   
+
+    .Secao3 .mainCodes{
+        width: 100%;
+        margin: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+}
+
+.Secao3 .mainCodes .codesInfo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+}
+
+    .Secao3 .mainCodes .codesInfo .title{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        transform: scale(0.75);
+        margin: 0px;
+    }
+    .Secao3 .mainCodes .codesInfo .codesInfo2{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        transform: scale(0.75);
+        margin: 0px;
+        margin-top: -18px;
+    }
+
+    .Secao3 .mainCodes .Codes_Templates{
+        width: 100%;
+        margin: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        margin-top: -100px;
+        transform: scale(0.65);
+    }
+    
+    .Secao3 .mainCodes .Codes_Templates:hover{
+        transform: scale(0.65);
+    }
+}
+
+@media (max-width: 900px) {
+    /* Exemplo: Ajustar o tamanho da fonte para telas maiores */
+    .Secao3{
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        margin-top: -300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Secao3 .mainCodes{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Secao3 .mainCodes .codesInfo{
+        width: 100%;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .Secao3 .mainCodes .Codes_Templates{
+        width: 100%;
+        margin: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: -250px;
+        transform: scale(0.65);
+    }
+}
+
+
 .Secao4 {
-    width: 1500px;
-    height: 400px;
-    margin-top: 15vh;
+    width: 100%;
     background-color: #121212;
     display: flex;
     justify-content: center;
-    justify-items: center;
+    align-items: center;
 }
 
 .Secao4 .retangulo {
-    justify-items: center;
-    justify-content: center;
-    width: 1100px;
-    height: 150px;
-    margin-left: 30vh;
-    padding: 75px;
+    width: 1200px;
+    height: 350px;
+    padding-left: 100px;
+    padding-right: 100px;
     background-color: #386DBD;
     border-radius: 10px;
     border-style: none;
@@ -810,43 +1249,42 @@ body {
 
 .Secao4 .retangulo .title {
     width: 100%;
+    height:  150px;
+}
+
+.Secao4 .retangulo .title h1{
+    width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
+    margin: 20px;
     font-size: 60px;
     font-weight: 100px;
     font-family: 'JetBrains Mono', monospace;
     color: #ffffff;
     word-spacing: 7px;
-    margin-top: -130px;
 }
+
 
 .Secao4 .retangulo .numbers {
     width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     justify-items: center;
-    width: 500px;
-    margin: 5px;
-    margin-left: 10vh;
 }
 
 .Secao4 .retangulo .numbers .templates {
-    justify-content: center;
     width: 100%;
-    margin: 5px;
-    margin-left: 20px;
+    margin: 0px;
 }
-
-.Secao4 .retangulo .numbers .templates .FODASE {
-    margin-top: -100px;
-    font-size: 50px;
+.Secao4 .retangulo .numbers .templates .FODASE h2{
+    margin: 0px;
+    font-size: 80px;
     color: #ffffff;
 }
 
-.Secao4 .retangulo .numbers .templates .letra_Fodase {
-    justify-content: center;
-    margin-top: -55px;
-    padding-left: 20px;
+.Secao4 .retangulo .numbers .templates .letra_Fodase h4{
     font-size: 25px;
     font-weight: 50px;
     color: #ffffff;
@@ -855,58 +1293,172 @@ body {
 }
 
 .Secao4 .retangulo .numbers .templates2 {
-    justify-content: center;
     width: 100%;
-    margin: 5px;
-    margin-right: 50px;
+    margin: 0px
 }
 
-.Secao4 .retangulo .numbers .templates2 .FODASE2 {
-    margin-top: -100px;
-    font-size: 50px;
+.Secao4 .retangulo .numbers .templates2 .FODASE2 h2{
+    margin: 0px;
+    font-size: 80px;
     color: #ffffff;
+    display: flex;
+    justify-content: center;
 }
 
-.Secao4 .retangulo .numbers .templates2 .stockedImages {
-    justify-content: center;
-    margin-top: -55px;
-    padding-left: 0px;
+.Secao4 .retangulo .numbers .templates2 .stockedImages h4{
     font-size: 25px;
     font-weight: 50px;
     color: #ffffff;
     word-spacing: 7px;
     font-family: 'JetBrains Mono', monospace;
+    display: flex;
+    justify-content: center;
 }
 
 .Secao4 .retangulo .numbers .templates3 {
-    justify-content: center;
     width: 100%;
-    margin: 5px;
-    margin-right: -600px;
+    margin: 0px
 }
 
-.Secao4 .retangulo .numbers .templates3 .FODASE3 {
-    margin-top: -100px;
-    font-size: 50px;
+.Secao4 .retangulo .numbers .templates3 .FODASE3 h2{
+    margin: 0px;
+    font-size: 80px;
     color: #ffffff;
+    display: flex;
+    justify-content: flex-end;
 }
 
-.Secao4 .retangulo .numbers .templates3 .theme {
-    justify-content: center;
-    margin-top: -55px;
-    padding-left: 20px;
+.Secao4 .retangulo .numbers .templates3 .theme h4{
     font-size: 25px;
     font-weight: 50px;
     color: #ffffff;
     word-spacing: 7px;
     font-family: 'JetBrains Mono', monospace;
+    display: flex;
+    justify-content: flex-end;
 }
 
+
+
+
+
+@media (min-width: 900px) {
+    /* Exemplo: Ajustar o tamanho da fonte para telas maiores */
+    .Secao4{
+        margin-top: 50px;
+    }
+
+    .Secao4 .retangulo{
+        margin: 0px;
+        display: block;
+        transform: scale(0.8);
+    }
+
+    .Secao4 .retangulo:hover{
+        transform: scale(0.8);
+    }
+}
+
+@media (max-width: 900px) {
+    /* Exemplo: Ajustar o tamanho da fonte para telas maiores */
+    .Secao4{
+        width: 100%;
+        height: 100%;
+        margin-top: -250px;
+    }
+
+    .Secao4 .retangulo{
+        width: 300px;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .Secao4 .retangulo .title{
+        transform: scale(0.55);
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .Secao4 .retangulo .title h1{
+        text-align: center;
+    }
+
+    .Secao4 .retangulo .numbers .templates{
+        width: 200px;
+        height: 120px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;    
+    }
+
+    .Secao4 .retangulo .FODASE{
+        transform: scale(0.5);
+        width: 200px;
+        height: 30px;
+    }
+
+    .Secao4 .retangulo .letra_Fodase{
+        height: 30px;
+        transform: scale(0.6);
+    }
+
+    .Secao4 .retangulo .numbers .templates2{
+        width: 200px;
+        height: 75px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;   
+    }
+
+    .Secao4 .retangulo .FODASE2{
+        transform: scale(0.5);
+        height: 30px;
+        width: 200px;
+        margin-left: -40px;
+    }
+
+    .Secao4 .retangulo .stockedImages{
+        transform: scale(0.5);
+        height: 70px;
+        margin-left: -40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .Secao4 .retangulo .numbers .templates3{
+        width: 150px;
+        height: 75px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;    
+    }
+
+    .Secao4 .retangulo .FODASE3{
+        width: 150px;
+        height: 30px;
+        transform: scale(0.5);
+        margin-top: -20px;
+    }
+
+    .Secao4 .retangulo .theme{
+        transform: scale(0.6); 
+        height: 30px;
+    }
+}
+
+
 .Secao5 {
-    display: flex;
     padding-top: 50px;
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     justify-items: center;
 }
@@ -919,33 +1471,180 @@ body {
     padding: 10px;
 }
 
+@media (min-width: 1401px) {
+    /* Exemplo: Ajustar o tamanho da fonte para telas maiores */
+    
+    .iframeJunto{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .Secao5{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+    }   
+
+    .Secao5 .e-con-inner{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: scale(1);
+}
+}
+
+@media (min-width: 900px) and (max-width: 1400px){
+    /* Exemplo: Ajustar o tamanho da fonte para telas maiores */
+    
+    .iframeJunto{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .Secao5{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+    }   
+
+    .Secao5 .e-con-inner{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: scale(0.9);
+}
+}
+
+@media (max-width: 900px) {
+    /* Exemplo: Ajustar o tamanho da fonte para telas maiores */
+    .Secao5{
+     display: none;   
+    }
+}
+
 .Secao6 {
-    transform: scale(0.8);
     width: 100%;
     height: 450px;
+    display: flex;
     justify-content: center;
     justify-items: center;
 }
 
-.Secao6 .e-con-inner {
-    width: 1460px;
-    margin-left: 17vh;
+@media (max-width: 1400px) {
+
+    .Secao6 .e-con-inner{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: scale(0.9);
+}
 }
 
+@media (min-width: 1400px) {
+    .Secao6{
+        height: 600px;
+    }
+
+    .Secao6 .e-con-inner{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: scale(1);
+}
+}
+
+@media (max-width: 900px) {
+    /* Exemplo: Ajustar o tamanho da fonte para telas maiores */
+    .Secao6{
+        display: none;
+    }
+}
+
+
 .Secao7 {
-    padding-top: 50px;
     width: 100%;
     display: flex;
     justify-content: center;
     justify-items: center;
 }
 
-.Secao7 .iframeSitesLegais {
+.Secao7 .iframeSitesLegais{
     padding: 10px;
 }
 
+.Secao7 .iframeSitesLegais iframe{
+    height: 450px; 
+    width: 375px;
+}
+
+@media (max-width: 900px) {
+    /* Exemplo: Ajustar o tamanho da fonte para telas maiores */
+    .Secao7{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+    }
+
+    .Secao7 .e-con-inner{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       }
+
+       .Secao7 .e-con-inner .iframeSitesLegais iframe{
+        width: 700px;
+        height: 600px;
+       }
+}
+
+@media (max-width: 1400px) {
+    .Secao7{
+        width: 100%;
+        height: 100%;
+        margin: 0px;    
+    }
+
+    .Secao7 .e-con-inner{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: scale(0.9);
+}
+}
+
+@media (min-width: 1401px) {
+    .Secao7{
+        width: 100%;
+        height: 100%;
+        margin: 0px;    
+    }
+
+    .Secao7 .e-con-inner{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: scale(1);
+}
+}
+
+
 /* -------------- Feito pelo Edu -------------- */
 
+@media (max-width: 1200px) {
+    .iframeSitesLegais {
+        transform: scale(0.85);
+        margin: -35px;
+    }
+}
 
 /*  --- Alinhamento das Divs --- */
 .secao8 {
@@ -953,7 +1652,7 @@ body {
     align-items: center;
     justify-content: center;
     width: 100%;
-    margin-top: 200px;
+    margin-top: 150px;
 }
 
 .secao8 .parte2 {
@@ -964,6 +1663,7 @@ body {
 .secao8 .parte2 .parte2Cima {
     display: flex;
     flex-direction: row;
+    margin-bottom:-20px;
 }
 
 .secao8 .parte2 .parte2baixo {
@@ -1045,18 +1745,20 @@ body {
 }
 
 .secao8 .parte1 .imagePag {
-    margin-top: 13.5vh;
-    margin-left: 2vh;
+    height: 730px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .secao8 .parte1 .imagePag img {
-    transform: scale(1.35);
+    height: 650px;
     border-radius: 10px;
     transition: transform 500ms ease-in-out;
 }
 
 .secao8 .parte1 .imagePag img:hover {
-    transform: scale(1.4);
+    transform: scale(1.05);
 }
 
 
@@ -1117,180 +1819,406 @@ body {
     border-radius: 10px;
 }
 
+@media (min-width: 900px) and (max-width: 1200px) {
+    .secao8 {
+        transform: scale(0.85);
+    }
+}
+
+@media (min-width: 680px) and (max-width: 900px){
+    .secao8 {
+        transform: scale(1);
+        display: flex;
+        flex-direction: column;
+    }
+
+    .secao8 .parte2{
+        transform: scale(0.85);
+    }
+
+    .secao8 .parte1{
+        height: 200px;
+        margin: 0px;
+    }
+
+    .secao8 .parte1 .texto h1{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .secao8 .parte1 .texto .paragrafo{
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .secao8 .parte1 .texto .paragrafo p{
+        text-align: center;
+    }
+
+    .secao8 .parte1 .imagePag{
+        display: none;
+    }
+}
+
+@media (max-width: 680px) {
+    .secao8 {
+        transform: scale(1);
+        display: flex;
+        flex-direction: column;
+    }
+
+    .secao8 .parte2{
+        transform: scale(0.85);
+        display: flex;
+        flex-direction: column;
+        height: 1700px;
+    }
+
+    .secao8 .parte2 .parte2Cima{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .secao8 .parte2 .parte2Cima .avaTexto{
+        width: 500px;
+    }
+
+    .secao8 .parte2 .parte2baixo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .secao8 .parte2 .parte2baixo .avaTexto{
+        width: 500px;
+    }
+    
+    .secao8 .parte1{
+        height: 150px;
+        margin: 0px;
+    }
+
+    .secao8 .parte1 .texto h1{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .secao8 .parte1 .texto .paragrafo{
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .secao8 .parte1 .texto .paragrafo p{
+        text-align: center;
+    }
+
+    .secao8 .parte1 .imagePag{
+        display: none;
+    }
+}
+
+
 /* ------------------------------------------------- */
 
-.Secao9 {
-    width: 100%;
+    .Secao9 {
+        width: 100%;
+        height: 800px;
+    }
+    
+    
+    .Secao9  .formularioCadastro  {
+        width: 100%;
+        margin: auto;
+        padding: 20px;
+    }
+    
+    .Secao9  .formularioCadastro .titleForms {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+    }
+    
+    .Secao9  .formularioCadastro .titleForms h2{
+        color: white;
+        font-size: 60px;
+        font-weight: 700;
+        font-family: "Fira Mono", sans-serif;
+    
+    }
+    
+    .Secao9  .formularioCadastro .subtitleForms {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        margin-top: -50px;
+        margin-bottom: 40px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+      
+    .Secao9  .formularioCadastro .subtitleForms h2{
+        width: 400px;
+        color: gray;
+        font-size: 20px;
+        font-weight: 400;
+        font-family: "Fira Mono", sans-serif;
+    
+    }
+      
+    .Secao9 .formularioCampos{
+        width: 100%;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .Secao9 .formularioCampos .dados1{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .formularioCampos .nomeEmail{
+        width: 100%;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        margin: 5px;
+    }
+    
+    .formularioCampos .nomeEmail #name{
+        height: 45px;
+        background-color: #121212;
+        border-color: white;
+        color: #f0ad4e;
+        font-size: 30px;
+        padding: 10px;
+        border-radius: 10px;
+        margin: 5px;
+    }
+    
+    .formularioCampos .nomeEmail #name:hover{
+        border-radius: 0px;
+    }
+    
+    .formularioCampos .nomeEmail #email{
+        height: 45px;
+        background-color: #121212;
+        border-color: white;
+        color: #f0ad4e;
+        font-size: 30px;
+        padding: 10px;
+        border-radius: 10px;
+        margin: 5px;
+    }
+    
+    .formularioCampos .nomeEmail #email:hover{
+        border-radius: 0px;
+    }
+    
+    
+    
+    .formularioCampos .phoneArea{
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        margin: 5px;
+    }
+    
+    .formularioCampos .phoneArea #phone{
+        height: 45px;
+        background-color: #121212;
+        border-color: white;
+        color: #f0ad4e;
+        font-size: 30px;
+        padding: 10px;
+        border-radius: 10px;
+        margin: 5px;
+    }
+    
+    .formularioCampos .phoneArea #phone:hover{
+        border-radius: 0px;
+    }
+    
+    .formularioCampos .phoneArea #service{
+        width: 390px;
+        height: 70px;
+        background-color: #121212;
+        border-color: white;
+        color: white;
+        font-size: 30px;
+        padding: 10px;
+        border-radius: 10px;
+        margin: 5px;
+    }
+    
+    .formularioCampos .phoneArea #service:hover{
+        border-radius: 0px;
+    }
+    
+    .formularioCampos .dados2{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    
+    .formularioCampos .messageAdicional{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .formularioCampos .messageAdicional #message{
+        width: 760px;
+        height: 200px;
+        font-size: 18px;
+        border-radius: 10px;
+        background-color: #121212;
+        color: #2bb969;
+        padding: 10px;
+        border-color: white;
+    }
+    
+    .formularioCampos .buttonSend{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        margin-left: 200px;
+    }
+    
+    .formularioCampos .buttonSend button{
+        width: 180px;
+        height: 50px;
+        text-align: center;
+        margin-top: 20px;
+        margin-right: 200px;
+        border-radius: 10px;
+        background-color: #d9e0eb;
+        font-size: 20px;
+        overflow: hidden;
+        box-shadow: 0px 0px 45px 10px rgba(209, 207, 230, 0.274);
+        transition: transform 200ms linear;
+        animation: moveDown 1.5s ease-out;
+        border: none;
+    }
+    
+    .formularioCampos .buttonSend button:hover{
+        transform: scale(1.1);
+        box-shadow: 0px 0px 45px 10px rgba(209, 207, 230, 0.582);
+    }
+
+    @media (min-width: 900px) {
+        .messageAdicionalMobile{
+            display: none;
+        }
+    }
+
+    @media (max-width: 900px) {
+        .Secao9{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .Secao9 .subtitleForms{
+            height: 60px;
+        }
+
+        .Secao9 .subtitleForms .formularioCampos{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .Secao9 .subtitleForms .formularioCampos .dados1{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .Secao9 .formularioCampos .dados1 .nomeEmail{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 25px;
+        }
+
+        .Secao9 .formularioCampos .dados1 .phoneArea{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .Secao9 .formularioCampos .dados2{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .Secao9 .formularioCampos .dados2 .messageAdicional{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+    }
+
+    .Secao9 .formularioCampos .dados2 .messageAdicional #message{
+        width: 360px;
+    }
+
+    .Secao9 .formularioCampos .dados2 .buttonSend{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 180px;
+        margin-bottom: 0px;
 }
-
-.Secao9 .divFormulario {
-    width: 100%;
-    padding: 20px;
-}
-
-.Secao9 .divFormulario .formularioCadastro  {
-    width: 100%;
-    margin: auto;
-}
-
-.Secao9 .divFormulario .formularioCadastro .titleForms {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    justify-items: center;
-    margin-top: 5vh;
-}
-
-.Secao9 .divFormulario .formularioCadastro .subtitleForms {
-    width: 400px;
-    display: flex;
-    justify-content: center;
-    justify-items: center;
-    margin-top: -6vh;
-    margin-bottom: 4vh;
-    margin-left: 78vh;
-    text-align: center;
-}
-
-.Secao9 .divFormulario .formularioCadastro .titleForms h2{
-    color: white;
-    font-size: 60px;
-    font-weight: 700;
-    font-family: "Fira Mono", sans-serif;
-
-}
-  
-.Secao9 .divFormulario .formularioCadastro .subtitleForms h2{
-    color: gray;
-    font-size: 20px;
-    font-weight: 400;
-    font-family: "Fira Mono", sans-serif;
-
-}
-  
-
-.formularioCampos .nomeEmail{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    justify-items: center;
-}
-
-.formularioCampos .nomeEmail #name{
-    background-color: #121212;
-    border-color: white;
-    color: #f0ad4e;
-    font-size: 30px;
-    padding: 10px;
-    border-radius: 10px;
-    margin-right: 3vh;
-}
-
-.formularioCampos .nomeEmail #name:hover{
-    border-radius: 0px;
-}
-
-.formularioCampos .nomeEmail #email{
-    background-color: #121212;
-    border-color: white;
-    color: #f0ad4e;
-    font-size: 30px;
-    padding: 10px;
-    border-radius: 10px;
-    margin-right: 3vh;
-}
-
-.formularioCampos .nomeEmail #email:hover{
-    border-radius: 0px;
-}
-
-
-
-.formularioCampos .phoneArea{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    justify-items: center;
-    margin-top: 4vh;
-}
-
-.formularioCampos .phoneArea #phone{
-    background-color: #121212;
-    border-color: white;
-    color: #f0ad4e;
-    font-size: 30px;
-    padding: 10px;
-    border-radius: 10px;
-    margin-right: 3vh;
-}
-
-.formularioCampos .phoneArea #phone:hover{
-    border-radius: 0px;
-}
-
-.formularioCampos .phoneArea #service{
-    background-color: #121212;
-    border-color: white;
-    color: white;
-    width: 400px;
-    font-size: 30px;
-    padding: 10px;
-    border-radius: 10px;
-    margin-right: 3vh;
-}
-
-.formularioCampos .phoneArea #service:hover{
-    border-radius: 0px;
-}
-
-
-.formularioCampos .messageAdicional{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    justify-items: center;
-    margin-top: 4vh;
-}
-
-.formularioCampos .messageAdicional #message{
-    width: 380px;
-    height: 200px;
-    font-size: 18px;
-    margin-right: 51vh;
-    border-radius: 10px;
-    background-color: #121212;
-    color: #2bb969;
-    padding: 10px;
-    border-color: white;
-}
-
-.formularioCampos .buttonSend{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    justify-items: center;
-    margin-left: 11vh;
-}
-
-.formularioCampos .buttonSend button{
-    width: 180px;
-    height: 50px;
-    text-align: center;
-    margin-top: -25vh;
-    border-radius: 10px;
-    background-color: #d9e0eb;
-    font-size: 20px;
-    overflow: hidden;
-    box-shadow: 0px 0px 45px 10px rgba(209, 207, 230, 0.274);
-    transition: transform 200ms linear;
-    animation: moveDown 1.5s ease-out;
-    border: none;
-}
-
-.formularioCampos .buttonSend button:hover{
-    transform: scale(1.1);
-    box-shadow: 0px 0px 45px 10px rgba(209, 207, 230, 0.582);
-}
+    }
 
 .finaldapagina{
     width: 100%;

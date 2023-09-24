@@ -268,6 +268,29 @@ nav a .btNAV4:hover {
   background-blend-mode: multiply;
 }
 
+.btn-imprimir{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.btn-imprimir button{
+  background-color: transparent;
+  border: 0px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-imprimir button:hover{
+  transform: scale(1.1);
+}
+
+.btn-imprimir button img{
+  width: 45px;
+}
+
+
+
 
 /* ------------------------------------ Media Query para página de About Us ------------------------------------  */
 @media (min-width: 320px) and (max-width: 480px) {
@@ -418,7 +441,11 @@ nav a .btNAV4:hover {
 
 
 
-
+@media print{
+  header, nav, .btn-imprimir, .imagemAboutUs{
+    display: none;
+  }
+}
 
 
 
@@ -896,6 +923,8 @@ nav a .btNAV4:hover {
   }
 
   .content_2 .imagemLP img{
+    display: flex;
+    align-self: center;
     width: 350px;
     margin: 5px;
   }
@@ -907,6 +936,8 @@ nav a .btNAV4:hover {
   }
 
   .content .imagemBLOG img{
+    display: flex;
+    align-self: center;
     width: 350px;
   }
 
@@ -917,6 +948,8 @@ nav a .btNAV4:hover {
   }
 
   .content_2 .imagemEC img {
+    display: flex;
+    align-self: center;
     width: 350px;
   }
 }
