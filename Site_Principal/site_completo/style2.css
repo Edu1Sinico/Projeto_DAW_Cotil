@@ -204,7 +204,7 @@ nav a .btNAV4:hover {
   }
 
   nav a{
-    margin: 1vh;
+    margin: 0.5vh;
   }
 
   nav a .btn-nav{
@@ -262,7 +262,7 @@ nav a .btNAV4:hover {
   width: 500px;
   height: 800px;
   float: right;
-  margin-top: -70vh;
+  margin-top: -65vh;
   margin-right: 15vh;
   background-image: linear-gradient(180deg, #79797900 0%, #79797975 100%), url('caminho/para/sua/imagem.jpg');
   background-blend-mode: multiply;
@@ -325,6 +325,13 @@ nav a .btNAV4:hover {
     height: 600px;
     margin: 0px;
   }
+
+  .btn-imprimir{
+    justify-content: center;
+    margin-left: 0%;
+    margin: 15px;
+  }
+
 }
 
 
@@ -360,6 +367,12 @@ nav a .btNAV4:hover {
     height: 700px;
     margin: 0px;
   }
+
+  .btn-imprimir{
+    justify-content: center;
+    margin-left: 0%;
+    margin: 15px;
+  }
 }
 
 
@@ -384,7 +397,6 @@ nav a .btNAV4:hover {
     margin-left: 2vh;
     font-size: 13.5px;
     width: 90%;
-
   }
 
   .content .textoAboutUs .imagemAboutUs {
@@ -398,6 +410,12 @@ nav a .btNAV4:hover {
     width: 95%;
     height: 700px;
     margin: 5px;
+  }
+
+  
+  .btn-imprimir{
+    justify-content: center;
+    margin-left: 10%;
   }
 }
 
